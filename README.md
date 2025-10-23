@@ -3,7 +3,7 @@ Author: Joris Meert
 
 # Project Title
 
-Simple overview of use/purpose.
+PowerShell
 
 ## Description
 
