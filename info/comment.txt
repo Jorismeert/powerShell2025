@@ -1,0 +1,22 @@
+git init .	# initialiseren van repository in map
+git status
+git add
+git commit -m “message”
+git push
+git pull
+
+function <Function-Name> {
+    [param(
+        [<ParameterType>]$<ParameterName>,
+        [<ParameterType>]$<ParameterName2> = <DefaultValue>
+    )]}
+
+    # Code that uses the parameters goes here
+Write-Host "The value of $ParameterName is: $($ParameterName)"
+
+begin: Code that runs once at the start of the function.
+process: Code that runs once for each object coming from the pipeline.
+end: Code that runs once after all pipeline input has been processed.
+clean: Code that runs regardless of any errors that may have occurred.
+
+"https://www.vrt.be/vrtnws/"
