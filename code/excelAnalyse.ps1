@@ -153,10 +153,12 @@ function Get-StatisticalSummary {
 Write-Host "COMPREHENSIVE DATA ANALYSIS" -ForegroundColor Magenta
 Write-Host "===========================" -ForegroundColor Magenta
 
+
 # Check if data exists
+$excelFile = "/Users/jorismeert/Desktop/Powershell/project/data/Beschikbaarheid_Geel_18062025.xlsx"
 if (-not $data -or $data.Count -eq 0) {
     Write-Host "ERROR: No data found. Please import your Excel file first." -ForegroundColor Red
-    Write-Host "Use: `$data = Import-Excel -Path `"/Users/jorismeert/Desktop/Powershell/project/data/Beschikbaarheid_Geel_18062025.xlsx`"" -ForegroundColor Yellow
+    Write-Host "Use: `$data = $excelFile `"" -ForegroundColor Yellow
     exit
 }
 
